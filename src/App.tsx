@@ -2,22 +2,21 @@ import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import TrustBar from "./components/TrustBar";
 import ServicesGrid from "./components/ServicesGrid";
+import Slideshow from "./components/Slideshow";
 import AboutUs from "./components/AboutUs";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
-import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
-      <main>
-        <Hero />
-        <TrustBar />
-        <ServicesGrid />
-        <AboutUs />
-        <ContactSection />
-      </main>
+      <Hero />
+      <TrustBar />
+      <ServicesGrid />
+      <Slideshow />
+      <AboutUs />
+      <ContactSection />
       <Footer />
     </div>
   );

@@ -99,13 +99,13 @@ const ServicesGrid = () => {
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-white/80 backdrop-blur-sm">
               <CardHeader className="pb-4">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto`}>
                   <service.icon className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="font-thicccboi text-xl text-foreground">
+                <CardTitle className="font-thicccboi text-xl text-foreground text-center">
                   {service.title}
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardDescription className="text-muted-foreground text-center">
                   {service.description}
                 </CardDescription>
               </CardHeader>

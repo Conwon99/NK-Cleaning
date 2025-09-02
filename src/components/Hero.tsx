@@ -109,7 +109,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Images */}
-          <div className="flex justify-center lg:justify-end items-start -mt-32">
+          <div className="flex justify-center lg:justify-end items-start -mt-48">
             <img
               src="/cleanerv2 - Edited.png"
               alt="Professional cleaning services in Kilmarnock - domestic, commercial, and specialist cleaning"
