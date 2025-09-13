@@ -24,7 +24,7 @@ const ServicesGrid = () => {
       description: "Regular weekly/fortnightly cleans, one-off deep cleans, and end-of-tenancy services.",
       features: ["Weekly/fortnightly cleans", "One-off deep cleans", "End-of-tenancy cleans", "Non-judgemental approach"],
       cta: "Book a home clean",
-      color: "from-pink-500 to-rose-600"
+      color: "from-pink-500 to-pink-700"
     },
     {
       icon: Building2,
@@ -32,7 +32,7 @@ const ServicesGrid = () => {
       description: "Offices, shops, and business premises with out-of-hours options available.",
       features: ["Office cleaning", "Retail spaces", "Out-of-hours service", "Uniformed team"],
       cta: "Request a site visit",
-      color: "from-blue-500 to-cyan-600"
+      color: "from-pink-500 to-pink-700"
     },
     {
       icon: Calendar,
@@ -40,7 +40,7 @@ const ServicesGrid = () => {
       description: "Fast, reliable changeovers between guests with laundry and linen services.",
       features: ["Quick changeovers", "Laundry & linen", "Restocking support", "24/7 availability"],
       cta: "Set up turnaround plan",
-      color: "from-purple-500 to-pink-600"
+      color: "from-pink-500 to-pink-700"
     },
     {
       icon: Shield,
@@ -48,7 +48,7 @@ const ServicesGrid = () => {
       description: "Trauma cleans, needle sweeps, hoarding support with trained professionals.",
       features: ["Trauma cleaning", "Needle sweeps", "Hoarding support", "Discreet service"],
       cta: "Speak to specialist team",
-      color: "from-red-500 to-orange-600"
+      color: "from-pink-500 to-pink-700"
     },
     {
       icon: Sparkles,
@@ -56,7 +56,7 @@ const ServicesGrid = () => {
       description: "Stain removal, odour neutralisation with quick-dry methods available.",
       features: ["Stain removal", "Odour neutralisation", "Quick-dry methods", "Deep cleaning"],
       cta: "Get carpet quote",
-      color: "from-amber-500 to-yellow-600"
+      color: "from-pink-500 to-pink-700"
     },
     {
       icon: Flame,
@@ -64,7 +64,7 @@ const ServicesGrid = () => {
       description: "Burnt-on grease removal, glass restoration and complete deodorisation.",
       features: ["Grease removal", "Glass restoration", "Deodorisation", "No elbow grease needed"],
       cta: "Book oven clean",
-      color: "from-orange-500 to-red-600"
+      color: "from-pink-500 to-pink-700"
     },
     {
       icon: Car,
@@ -72,7 +72,7 @@ const ServicesGrid = () => {
       description: "Touring vans and static caravans with interior refresh and optional exterior cleaning.",
       features: ["Touring vans", "Static caravans", "Interior refresh", "Exterior options"],
       cta: "Caravan refresh quote",
-      color: "from-teal-500 to-pink-600"
+      color: "from-pink-500 to-pink-700"
     },
     {
       icon: Shirt,
@@ -80,7 +80,7 @@ const ServicesGrid = () => {
       description: "Wash, dry, fold for domestic and holiday-let clients with linen management.",
       features: ["Wash, dry, fold", "Linen management", "Holiday-let support", "Professional service"],
       cta: "Add laundry to booking",
-      color: "from-indigo-500 to-blue-600"
+      color: "from-pink-500 to-pink-700"
     }
   ];
 
@@ -149,21 +149,13 @@ const ServicesGrid = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Get your free quote today and experience the difference professional cleaning makes.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button 
               onClick={handleContactClick}
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold rounded-full"
             >
               Get Free Quote
-            </Button>
-            <Button 
-              onClick={handleContactClick}
-              variant="outline"
-              size="lg"
-              className="px-8 py-4 text-lg font-semibold rounded-full border-2 hover:bg-primary hover:text-primary-foreground"
-            >
-              View All Services
             </Button>
           </div>
         </div>

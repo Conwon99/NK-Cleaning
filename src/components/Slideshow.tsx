@@ -14,9 +14,9 @@ const Slideshow = () => {
     },
     {
       src: "/slideshow/clean3.jpg", 
-      alt: "Commercial cleaning services for offices and businesses",
-      title: "Commercial Excellence",
-      description: "Keep your business premises spotless and professional"
+      alt: "Professional oven cleaning services - grease removal and restoration",
+      title: "Oven Deep Clean",
+      description: "Professional grease removal and complete oven restoration"
     },
     {
       src: "/slideshow/clean4.jpg",
