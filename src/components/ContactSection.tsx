@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, MessageCircle, MapPin, Clock, Shield, CheckCircle, Award, BadgeCheck } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Clock, Shield, CheckCircle, Award, BadgeCheck, Mail } from "lucide-react";
 import { useState } from "react";
 
 const ContactSection = () => {
@@ -57,6 +57,16 @@ const ContactSection = () => {
       icon: Clock,
       title: "Business Hours",
       details: "Monday - Sunday: 7:00 AM - 8:00 PM"
+    },
+    {
+      icon: Phone,
+      title: "Phone",
+      details: "07506 002727"
+    },
+    {
+      icon: Mail,
+      title: "Email",
+      details: "nkdomesticclean@gmail.com"
     },
     {
       icon: Shield,
@@ -215,7 +225,7 @@ const ContactSection = () => {
                   Message on Facebook
                 </Button>
                 <Button
-                  onClick={() => window.location.href = "tel:+44"}
+                  onClick={() => window.location.href = "tel:07506002727"}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg py-4 font-semibold rounded-full"
                 >
                   <Phone className="w-5 h-5 mr-2" />

@@ -89,10 +89,10 @@ const Navigation = () => {
                 Facebook
               </Button>
               <Button
-                onClick={() => window.open('tel:07700900123', '_self')}
+                onClick={() => window.open('tel:07506002727', '_self')}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
               >
-                📞 07700 900 123
+                📞 07506 002727
               </Button>
             </div>
           )}
@@ -135,10 +135,10 @@ const Navigation = () => {
                   Message on Facebook
                 </Button>
                 <Button
-                  onClick={() => window.open('tel:07700900123', '_self')}
+                  onClick={() => window.open('tel:07506002727', '_self')}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
                 >
-                  📞 07700 900 123
+                  📞 07506 002727
                 </Button>
               </div>
             </div>

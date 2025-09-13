@@ -178,7 +178,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <h5 className="font-semibold text-sm">Contact</h5>
-                    <p className="text-xs text-primary-foreground/80">Phone & Facebook</p>
+                    <p className="text-xs text-primary-foreground/80">07506 002727</p>
                   </div>
                 </div>
               </CardContent>
