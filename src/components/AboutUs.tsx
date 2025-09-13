@@ -97,6 +97,14 @@ const AboutUs = () => {
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <span className="w-2 h-2 bg-primary rounded-full"></span>
+                SEPA Registered
+              </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full"></span>
+                SMAS Registered
+              </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span className="w-2 h-2 bg-primary rounded-full"></span>
                 PVG certified
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">

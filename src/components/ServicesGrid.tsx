@@ -13,6 +13,10 @@ import {
 } from "lucide-react";
 
 const ServicesGrid = () => {
+  const handleContactClick = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const services = [
     {
       icon: Home,
@@ -20,7 +24,7 @@ const ServicesGrid = () => {
       description: "Regular weekly/fortnightly cleans, one-off deep cleans, and end-of-tenancy services.",
       features: ["Weekly/fortnightly cleans", "One-off deep cleans", "End-of-tenancy cleans", "Non-judgemental approach"],
       cta: "Book a home clean",
-      color: "from-green-500 to-emerald-600"
+      color: "from-pink-500 to-rose-600"
     },
     {
       icon: Building2,
@@ -68,7 +72,7 @@ const ServicesGrid = () => {
       description: "Touring vans and static caravans with interior refresh and optional exterior cleaning.",
       features: ["Touring vans", "Static caravans", "Interior refresh", "Exterior options"],
       cta: "Caravan refresh quote",
-      color: "from-teal-500 to-green-600"
+      color: "from-teal-500 to-pink-600"
     },
     {
       icon: Shirt,
@@ -123,6 +127,7 @@ const ServicesGrid = () => {
                 
                 {/* CTA Button */}
                 <Button 
+                  onClick={handleContactClick}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold group-hover:bg-primary/80 transition-all duration-300 mt-auto"
                 >
                   {service.cta}
@@ -143,12 +148,14 @@ const ServicesGrid = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
+              onClick={handleContactClick}
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold rounded-full"
             >
               Get Free Quote
             </Button>
             <Button 
+              onClick={handleContactClick}
               variant="outline"
               size="lg"
               className="px-8 py-4 text-lg font-semibold rounded-full border-2 hover:bg-primary hover:text-primary-foreground"

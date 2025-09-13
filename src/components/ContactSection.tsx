@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, MessageCircle, MapPin, Clock, Shield, CheckCircle } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Clock, Shield, CheckCircle, Award, BadgeCheck } from "lucide-react";
 import { useState } from "react";
 
 const ContactSection = () => {
@@ -245,16 +245,24 @@ const ContactSection = () => {
 
             {/* Trust Badge */}
             <Card className="border-0 bg-gradient-to-r from-primary/10 to-primary/5 text-center p-6">
-              <div className="space-y-3">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
-                  <Shield className="w-8 h-8 text-primary-foreground" />
+              <div className="space-y-4">
+                <div className="flex justify-center gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                    <Shield className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                    <Award className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                    <BadgeCheck className="w-6 h-6 text-primary-foreground" />
+                  </div>
                 </div>
                 <div>
                   <h4 className="font-thicccboi font-bold text-lg text-foreground">
                     Fully Insured & Certified
                   </h4>
                   <p className="text-sm text-muted-foreground">
-                    Complete peace of mind for your property and our team
+                    SEPA & SMAS registered with complete insurance coverage
                   </p>
                 </div>
               </div>

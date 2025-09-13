@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="bg-background min-h-screen flex items-center py-16 px-4 pt-32 pb-0">
+    <section id="hero" className="bg-background min-h-screen flex items-center py-16 px-4 pt-32 pb-16">
       <div className="container mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Text Content */}
@@ -60,11 +60,11 @@ const Hero = () => {
 
           {/* Hero Images */}
           <div className="flex flex-col items-center lg:items-end space-y-8">
-            <div className="flex justify-center lg:justify-end items-start -mt-48">
+            <div className="flex justify-center lg:justify-end items-start">
               <img
-                src="/greenhero.png"
+                src="/cleanerv2 - Edited.png"
                 alt="Professional cleaning services in Kilmarnock - domestic, commercial, and specialist cleaning"
-                className="w-full max-w-5xl h-[800px] lg:h-[950px] object-contain"
+                className="w-full max-w-4xl h-auto object-contain"
               />
             </div>
             

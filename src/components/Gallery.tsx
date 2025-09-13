@@ -6,37 +6,37 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      src: "/lovable-uploads/garden1.jpg",
+      src: "/gallery/garden1.jpg",
       alt: "Professional garden strimming and edging work in Troon",
       title: "Garden Strimming & Edging",
       location: "Troon"
     },
     {
-      src: "/lovable-uploads/treecutting.jpg", 
+      src: "/gallery/treecutting.jpg", 
       alt: "Professional tree surgery and removal services in Ayrshire",
       title: "Tree Surgery & Removal",
       location: "Ayr"
     },
     {
-      src: "/lovable-uploads/hedge.jpg",
+      src: "/gallery/hedge.jpg",
       alt: "Hedge trimming and garden maintenance in Prestwick",
       title: "Hedge Trimming", 
       location: "Prestwick"
     },
     {
-      src: "/lovable-uploads/lawnmower.jpg",
+      src: "/gallery/lawnmower.jpg",
       alt: "Lawn care and grass cutting services",
       title: "Lawn Care",
       location: "Troon"
     },
     {
-      src: "/lovable-uploads/hedge2.jpg",
+      src: "/gallery/hedge2.jpg",
       alt: "Additional hedge cutting and garden maintenance work",
       title: "Hedge Maintenance",
       location: "Ayr"
     },
     {
-      src: "/lovable-uploads/hero.jpg",
+      src: "/gallery/hero.jpg",
       alt: "Professional garden services and landscaping in Ayrshire",
       title: "Garden Services",
       location: "Prestwick"

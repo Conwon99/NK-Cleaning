@@ -4,6 +4,7 @@ import TrustBar from "./components/TrustBar";
 import ServicesGrid from "./components/ServicesGrid";
 import Slideshow from "./components/Slideshow";
 import AboutUs from "./components/AboutUs";
+import Certificates from "./components/Certificates";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 
@@ -16,6 +17,7 @@ function App() {
       <ServicesGrid />
       <Slideshow />
       <AboutUs />
+      <Certificates />
       <ContactSection />
       <Footer />
     </div>

@@ -30,6 +30,7 @@ const Navigation = () => {
     { name: "Home", href: "#hero" },
     { name: "Services", href: "#services" },
     { name: "About", href: "#about" },
+    { name: "Certificates", href: "#certificates" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -44,10 +45,12 @@ const Navigation = () => {
       <div className="container mx-auto max-w-7xl px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">NK</span>
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/NK Logo no back.png" 
+              alt="NK Cleaning Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <div className="hidden sm:block">
               <div className="font-thicccboi font-bold text-xl text-foreground">
                 NK Cleaning

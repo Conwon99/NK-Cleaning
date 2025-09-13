@@ -20,7 +20,7 @@ All colors MUST be HSL.
     /* Core brand colors */
     --sunshine-yellow: 51 100% 50%;     /* #FEEB00 */
     --sky-blue: 197 73% 73%;            /* #87CEEB */
-    --grass-green: 75 100% 32%;         /* #79a100 */
+    --grass-pink: 330 85% 65%;          /* #E91E63 */
     --donut-pink: 330 100% 71%;         /* #FF69B4 */
     --asphalt-grey: 0 0% 18%;           /* #2F2F2F */
     
@@ -34,7 +34,7 @@ All colors MUST be HSL.
     --popover: 81 100% 97%;
     --popover-foreground: var(--asphalt-grey);
 
-    --primary: var(--grass-green);
+    --primary: var(--grass-pink);
     --primary-foreground: 0 0% 100%;
 
     --secondary: var(--sky-blue);
@@ -51,20 +51,20 @@ All colors MUST be HSL.
 
     --border: 81 50% 85%;
     --input: 81 50% 92%;
-    --ring: var(--grass-green);
+    --ring: var(--grass-pink);
 
     /* Hero button variant */
-    --hero-button: var(--grass-green);
+    --hero-button: var(--grass-pink);
     --hero-button-foreground: 0 0% 100%;
-    --hero-button-hover: 75 100% 28%;
+    --hero-button-hover: 330 75% 55%;
 
     /* Trust indicators */
-    --trust-bg: var(--grass-green);
+    --trust-bg: var(--grass-pink);
     --trust-foreground: 0 0% 100%;
 
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--sky-blue)), hsl(var(--sunshine-yellow)));
-    --gradient-services: linear-gradient(45deg, hsl(var(--grass-green)), hsl(var(--sky-blue)));
+    --gradient-services: linear-gradient(45deg, hsl(var(--grass-pink)), hsl(var(--sky-blue)));
     --gradient-cta: linear-gradient(135deg, hsl(var(--sunshine-yellow)), hsl(var(--donut-pink)));
 
     /* Shadows */

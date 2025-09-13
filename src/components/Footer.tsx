@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, MessageCircle, MapPin, Clock, Shield, CheckCircle, Sparkles } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Clock, Shield, CheckCircle, Sparkles, Award, BadgeCheck } from "lucide-react";
 
 const Footer = () => {
   const handleQuoteClick = () => {
-    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleFacebookClick = () => {
@@ -38,9 +38,11 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-2 space-y-6">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-xl">NK</span>
-                </div>
+                <img 
+                  src="/NK Logo no back.png" 
+                  alt="NK Cleaning Logo" 
+                  className="w-12 h-12 object-contain"
+                />
                 <div>
                   <h3 className="font-thicccboi font-bold text-2xl">
                     NK Domestic & Commercial Cleaning LTD
@@ -65,6 +67,14 @@ const Footer = () => {
                 <div className="flex items-center gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-primary" />
                   Trained Specialists
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <Award className="w-4 h-4 text-primary" />
+                  SEPA Registered
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <BadgeCheck className="w-4 h-4 text-primary" />
+                  SMAS Registered
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <Sparkles className="w-4 h-4 text-primary" />
