@@ -60,7 +60,7 @@ const Hero = () => {
 
           {/* Hero Images */}
           <div className="flex flex-col items-center lg:items-end space-y-8">
-            <div className="flex justify-center lg:justify-end items-start">
+            <div className="flex justify-center lg:justify-end items-start mt-16 lg:mt-24">
               <img
                 src="/cleanerv2 - Edited.png"
                 alt="Professional cleaning services in Kilmarnock - domestic, commercial, and specialist cleaning"

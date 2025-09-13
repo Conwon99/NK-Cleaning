@@ -100,8 +100,10 @@ const ServicesGrid = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-white/80 backdrop-blur-sm flex flex-col">
+          {services.map((service, index) => {
+            const serviceKey = service.title.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/--+/g, '-').replace(/^-|-$/g, '');
+            return (
+            <Card key={index} id={`services-${serviceKey}`} className="group hover:shadow-lg transition-all duration-300 hover:scale-105 border-0 bg-white/80 backdrop-blur-sm flex flex-col">
               <CardHeader className="pb-4 flex-shrink-0">
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto`}>
                   <service.icon className="w-6 h-6 text-white" />
@@ -135,7 +137,8 @@ const ServicesGrid = () => {
                 </Button>
               </CardContent>
             </Card>
-          ))}
+            );
+          })}
         </div>
 
         {/* Bottom CTA */}
