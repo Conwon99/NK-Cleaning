@@ -25,7 +25,7 @@ All colors MUST be HSL.
     --asphalt-grey: 0 0% 18%;           /* #2F2F2F */
     
     /* Semantic tokens */
-    --background: 81 100% 95%;          /* #f6ffe7 */
+    --background: 0 0% 100%;          /* #ffffff */
     --foreground: var(--asphalt-grey);
 
     --card: 81 100% 97%;

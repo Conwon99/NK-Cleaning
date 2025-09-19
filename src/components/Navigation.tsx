@@ -18,12 +18,31 @@ const Navigation = () => {
   }, []);
 
   const handleQuoteClick = () => {
+    gtag('event', 'click', {
+      event_category: 'CTA',
+      event_label: 'Get Free Quote - Navigation',
+      value: 1
+    });
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
     setIsOpen(false);
   };
 
   const handleFacebookClick = () => {
+    gtag('event', 'click', {
+      event_category: 'CTA',
+      event_label: 'Facebook - Navigation',
+      value: 1
+    });
     window.open("https://www.facebook.com/profile.php?id=61570451796499", "_blank");
+  };
+
+  const handlePhoneClick = () => {
+    gtag('event', 'click', {
+      event_category: 'CTA',
+      event_label: 'Phone Call - Navigation',
+      value: 1
+    });
+    window.open('tel:07506002727', '_self');
   };
 
   const navItems = [
@@ -89,7 +108,7 @@ const Navigation = () => {
                 Facebook
               </Button>
               <Button
-                onClick={() => window.open('tel:07506002727', '_self')}
+                onClick={handlePhoneClick}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
               >
                 📞 07506 002727
@@ -135,7 +154,7 @@ const Navigation = () => {
                   Message on Facebook
                 </Button>
                 <Button
-                  onClick={() => window.open('tel:07506002727', '_self')}
+                  onClick={handlePhoneClick}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
                 >
                   📞 07506 002727

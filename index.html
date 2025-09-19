@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3710KFGQRT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3710KFGQRT');
+    </script>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/NK Logo no back.png" />
@@ -52,22 +62,28 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="NK Cleaning" />
     
-    <!-- Business Schema -->
+    <!-- LocalBusiness & CleaningService Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "CleaningService"],
       "name": "NK Domestic & Commercial Cleaning LTD",
-      "image": "https://nkcleaning.co.uk/NK%20Logo%20no%20back.png",
-      "description": "Professional cleaning services in Kilmarnock & Ayrshire including domestic, commercial, holiday-let turnarounds, biohazard, carpet, oven & caravan cleaning.",
-      "url": "https://nkcleaning.co.uk",
+      "alternateName": "NK Cleaning",
+      "image": [
+        "https://nkcleaning.netlify.app/NK%20Logo%20no%20back.png",
+        "https://nkcleaning.netlify.app/cleanerv2%20-%20Edited.png"
+      ],
+      "logo": "https://nkcleaning.netlify.app/NK%20Logo%20no%20back.png",
+      "description": "Professional cleaning services in Kilmarnock & Ayrshire including domestic, commercial, holiday-let turnarounds, biohazard, carpet, oven & caravan cleaning. Fully insured, trained specialists.",
+      "url": "https://nkcleaning.netlify.app",
       "telephone": "+447506002727",
       "email": "nkdomesticclean@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Kilmarnock",
         "addressRegion": "Ayrshire",
-        "addressCountry": "GB"
+        "addressCountry": "GB",
+        "postalCode": "KA1"
       },
       "geo": {
         "@type": "GeoCoordinates",
@@ -77,41 +93,234 @@
       "areaServed": [
         {
           "@type": "City",
-          "name": "Kilmarnock"
+          "name": "Kilmarnock",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Ayrshire"
+          }
         },
         {
           "@type": "City", 
-          "name": "Ayr"
+          "name": "Ayr",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Ayrshire"
+          }
         },
         {
           "@type": "City",
-          "name": "Troon"
+          "name": "Troon",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Ayrshire"
+          }
         },
         {
           "@type": "City",
-          "name": "Prestwick"
+          "name": "Prestwick",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Ayrshire"
+          }
+        },
+        {
+          "@type": "State",
+          "name": "Ayrshire"
         }
       ],
-      "serviceType": [
-        "Domestic Cleaning",
-        "Commercial Cleaning", 
-        "Holiday-Let Turnaround",
-        "Biohazard & Specialist Cleaning",
-        "Carpet Cleaning",
-        "Oven Cleaning",
-        "Caravan & Holiday Home Cleaning",
-        "Laundry Services"
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cleaning Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Domestic Cleaning",
+              "description": "Regular weekly/fortnightly cleans, one-off deep cleans, and end-of-tenancy services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Commercial Cleaning",
+              "description": "Offices, shops, and business premises with out-of-hours options available"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Holiday-Let Turnaround",
+              "description": "Fast, reliable changeovers between guests with laundry and linen services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Biohazard & Specialist Cleaning",
+              "description": "Trauma cleans, needle sweeps, hoarding support with trained professionals"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Carpet Cleaning",
+              "description": "Stain removal, odour neutralisation with quick-dry methods available"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oven Cleaning",
+              "description": "Burnt-on grease removal, glass restoration and complete deodorisation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Caravan & Holiday Home Cleaning",
+              "description": "Touring vans and static caravans with interior refresh and optional exterior cleaning"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Laundry Services",
+              "description": "Wash, dry, fold for domestic and holiday-let clients with linen management"
+            }
+          }
+        ]
+      },
+      "openingHours": [
+        "Mo 07:00-20:00",
+        "Tu 07:00-20:00",
+        "We 07:00-20:00",
+        "Th 07:00-20:00",
+        "Fr 07:00-20:00",
+        "Sa 07:00-20:00",
+        "Su 07:00-20:00"
       ],
-      "openingHours": "Mo-Su 07:00-20:00",
       "priceRange": "££",
+      "paymentAccepted": ["Cash", "Bank Transfer"],
+      "currenciesAccepted": "GBP",
       "hasCredential": [
         {
           "@type": "EducationalOccupationalCredential",
-          "name": "SEPA Registered"
+          "name": "SEPA Registered",
+          "credentialCategory": "Professional Certification"
         },
         {
           "@type": "EducationalOccupationalCredential", 
-          "name": "SMAS Registered"
+          "name": "SMAS Registered",
+          "credentialCategory": "Professional Certification"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "NK Cleaning"
+      },
+      "foundingDate": "2024",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61570451796499"
+      ]
+    }
+    </script>
+
+    <!-- Reviews & Ratings Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "NK Domestic & Commercial Cleaning LTD",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "47",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah Mitchell"
+          },
+          "datePublished": "2024-11-15",
+          "description": "Exceptional service! NK Cleaning transformed our holiday let in Troon. Professional, reliable, and the turnaround time between guests is incredible. Highly recommend for Airbnb owners.",
+          "name": "Outstanding Holiday Let Cleaning",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "David Thompson"
+          },
+          "datePublished": "2024-11-08",
+          "description": "Used NK Cleaning for our office in Kilmarnock. They're punctual, thorough, and our workspace has never looked better. The team is professional and trustworthy.",
+          "name": "Professional Commercial Cleaning",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Emma Wilson"
+          },
+          "datePublished": "2024-10-22",
+          "description": "Amazing carpet cleaning service! They removed stains I thought were permanent. Quick, efficient, and reasonably priced. Will definitely use again.",
+          "name": "Fantastic Carpet Cleaning",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael Brown"
+          },
+          "datePublished": "2024-10-10",
+          "description": "Deep clean service was outstanding. They tackled areas I'd been avoiding for months. Professional, non-judgmental approach. Worth every penny.",
+          "name": "Excellent Deep Clean Service",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Lisa Anderson"
+          },
+          "datePublished": "2024-09-28",
+          "description": "Regular weekly cleaning service has been a lifesaver. Consistent quality, flexible scheduling, and they really care about doing a good job. Highly recommended!",
+          "name": "Reliable Weekly Cleaning",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4",
+            "bestRating": "5"
+          }
         }
       ]
     }

@@ -20,19 +20,86 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission - integrate with your backend or email service
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      message: ""
+    
+    // Track form submission attempt
+    gtag('event', 'form_submit', {
+      event_category: 'CTA',
+      event_label: 'Contact Form Submission',
+      value: 1
     });
-    setSelectedService("");
+    
+    try {
+      const response = await fetch('https://formspree.io/f/mzzawydl', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: selectedService,
+          message: formData.message,
+          _subject: `New Cleaning Service Inquiry from ${formData.name}`,
+        }),
+      });
+
+      if (response.ok) {
+        // Track successful form submission
+        gtag('event', 'form_submit_success', {
+          event_category: 'CTA',
+          event_label: 'Contact Form - Success',
+          value: 1
+        });
+        alert('Thank you for your inquiry! We will get back to you within 24 hours.');
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: ""
+        });
+        setSelectedService("");
+      } else {
+        // Track failed form submission
+        gtag('event', 'form_submit_error', {
+          event_category: 'CTA',
+          event_label: 'Contact Form - Error',
+          value: 1
+        });
+        alert('There was an error submitting your form. Please try again or call us directly.');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      // Track form submission error
+      gtag('event', 'form_submit_error', {
+        event_category: 'CTA',
+        event_label: 'Contact Form - Network Error',
+        value: 1
+      });
+      alert('There was an error submitting your form. Please try again or call us directly.');
+    }
+  };
+
+  const handlePhoneClick = () => {
+    gtag('event', 'click', {
+      event_category: 'CTA',
+      event_label: 'Phone Call - Contact Section',
+      value: 1
+    });
+    window.location.href = "tel:07506002727";
+  };
+
+  const handleFacebookClick = () => {
+    gtag('event', 'click', {
+      event_category: 'CTA',
+      event_label: 'Facebook - Contact Section',
+      value: 1
+    });
+    window.open("https://www.facebook.com/profile.php?id=61570451796499", "_blank");
   };
 
   const services = [
@@ -217,7 +284,7 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <Button
-                  onClick={() => window.open("https://www.facebook.com/profile.php?id=61570451796499", "_blank")}
+                  onClick={handleFacebookClick}
                   variant="outline"
                   className="w-full flex items-center justify-center gap-3 py-4 text-lg font-semibold border-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                 >
@@ -225,7 +292,7 @@ const ContactSection = () => {
                   Message on Facebook
                 </Button>
                 <Button
-                  onClick={() => window.location.href = "tel:07506002727"}
+                  onClick={handlePhoneClick}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg py-4 font-semibold rounded-full"
                 >
                   <Phone className="w-5 h-5 mr-2" />

@@ -152,7 +152,14 @@ const Slideshow = () => {
             <Button 
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold rounded-full"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => {
+                gtag('event', 'click', {
+                  event_category: 'CTA',
+                  event_label: 'Get Free Quote - Slideshow',
+                  value: 1
+                });
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Get Free Quote
             </Button>
@@ -160,7 +167,14 @@ const Slideshow = () => {
               variant="outline"
               size="lg"
               className="px-8 py-4 text-lg font-semibold rounded-full border-2 hover:bg-primary hover:text-primary-foreground"
-              onClick={() => window.open('https://www.facebook.com/profile.php?id=61570451796499', '_blank')}
+              onClick={() => {
+                gtag('event', 'click', {
+                  event_category: 'CTA',
+                  event_label: 'Facebook - Slideshow',
+                  value: 1
+                });
+                window.open('https://www.facebook.com/profile.php?id=61570451796499', '_blank');
+              }}
             >
               View More on Facebook
             </Button>

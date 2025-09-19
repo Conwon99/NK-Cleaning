@@ -4,10 +4,20 @@ import { Phone, MessageCircle, MapPin, Clock, Shield, CheckCircle, Sparkles, Awa
 
 const Footer = () => {
   const handleQuoteClick = () => {
+    gtag('event', 'click', {
+      event_category: 'CTA',
+      event_label: 'Get Free Quote - Footer',
+      value: 1
+    });
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleFacebookClick = () => {
+    gtag('event', 'click', {
+      event_category: 'CTA',
+      event_label: 'Facebook - Footer',
+      value: 1
+    });
     window.open("https://www.facebook.com/profile.php?id=61570451796499", "_blank");
   };
 
@@ -93,7 +103,7 @@ const Footer = () => {
                 <Button 
                   onClick={handleFacebookClick}
                   variant="outline"
-                  className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 rounded-full"
+                  className="border-white/30 text-white hover:bg-white/10 rounded-full bg-white/5"
                 >
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Facebook
@@ -149,8 +159,8 @@ const Footer = () => {
                     <MapPin className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <h5 className="font-semibold text-sm">Service Area</h5>
-                    <p className="text-xs text-primary-foreground/80">Kilmarnock & Ayrshire</p>
+                    <h5 className="font-semibold text-sm text-primary-foreground">Service Area</h5>
+                    <p className="text-xs text-primary-foreground">Kilmarnock & Ayrshire</p>
                   </div>
                 </div>
               </CardContent>
@@ -163,8 +173,8 @@ const Footer = () => {
                     <Clock className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <h5 className="font-semibold text-sm">Business Hours</h5>
-                    <p className="text-xs text-primary-foreground/80">7:00 AM - 8:00 PM Daily</p>
+                    <h5 className="font-semibold text-sm text-primary-foreground">Business Hours</h5>
+                    <p className="text-xs text-primary-foreground">7:00 AM - 8:00 PM Daily</p>
                   </div>
                 </div>
               </CardContent>
@@ -177,8 +187,8 @@ const Footer = () => {
                     <Phone className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <h5 className="font-semibold text-sm">Contact</h5>
-                    <p className="text-xs text-primary-foreground/80">07506 002727</p>
+                    <h5 className="font-semibold text-sm text-primary-foreground">Contact</h5>
+                    <p className="text-xs text-primary-foreground">07506 002727</p>
                   </div>
                 </div>
               </CardContent>
@@ -198,6 +208,19 @@ const Footer = () => {
               <span>Company Number: [ADD]</span>
               <span>Registered in Scotland</span>
             </div>
+          </div>
+          <div className="text-center mt-4">
+            <p className="text-xs text-primary-foreground/50">
+              Website designed by{' '}
+              <a 
+                href="https://connorsdesignsolutions.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-200 underline"
+              >
+                Connors Design Solutions
+              </a>
+            </p>
           </div>
         </div>
       </div>

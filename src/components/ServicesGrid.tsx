@@ -14,6 +14,11 @@ import {
 
 const ServicesGrid = () => {
   const handleContactClick = () => {
+    gtag('event', 'click', {
+      event_category: 'CTA',
+      event_label: 'Get Free Quote - Services',
+      value: 1
+    });
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 

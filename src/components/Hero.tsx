@@ -3,10 +3,20 @@ import { MessageCircle, Sparkles } from "lucide-react";
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
+    gtag('event', 'click', {
+      event_category: 'CTA',
+      event_label: 'Facebook Message - Hero',
+      value: 1
+    });
     window.location.href = "https://www.facebook.com/profile.php?id=61570451796499";
   };
 
   const handleQuoteClick = () => {
+    gtag('event', 'click', {
+      event_category: 'CTA',
+      event_label: 'Get Free Quote - Hero',
+      value: 1
+    });
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
